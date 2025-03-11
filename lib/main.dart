@@ -2,11 +2,11 @@ import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:testandroid/modules/massenger/messanger_screen.dart';
-import 'package:testandroid/modules/Ibm/result_screen.dart';
+import 'package:testandroid/modules/result_screen.dart';
 
 import 'Counter/counter_screen.dart';
 import 'Shared/bloc_observer.dart';
-import 'modules/Ibm/ibm_calculator.dart';
+import 'modules/ibm_calculator.dart';
 import 'modules/TodoApp/todo-app.dart';
 
 void main() {
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
       ,
       title: 'Flutter Demo',
 
-      home: Homelayout(),
+      home: IBMCalculatorScreen(),
     );
   }
 }
