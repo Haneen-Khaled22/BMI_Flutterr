@@ -25,7 +25,7 @@ class _IBMCalculatorScreenState extends State<IBMCalculatorScreen> {
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: Color(0xFF16162C),
-        title: Text('IBM Calculator',style: TextStyle(
+        title: Text('BMI Calculator',style: TextStyle(
           fontWeight: FontWeight.bold,
           color: Colors.white
         ),),
