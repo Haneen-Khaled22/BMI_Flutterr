@@ -20,4 +20,10 @@ class CounterCubit extends Cubit<CounterStates>{
     emit(CounterMinusState(counter));
   }
 
+  bool isDark=false;
+  void changeThemeMode(){
+    isDark = ! isDark;
+    emit(ChangeThemeMode());
+  }
+
 }

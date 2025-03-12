@@ -12,3 +12,5 @@ class CounterMinusState extends CounterStates{
   final int counter ;
   CounterMinusState(this.counter);
 }
+
+class ChangeThemeMode extends CounterStates{}

@@ -1,0 +1,134 @@
+{
+  "status": "ok",
+  "totalResults": 21,
+  "articles": [
+  {
+    "source": {
+      "id": "abc-news",
+      "name": "ABC News"
+    },
+    "author": "ABC News",
+    "title": "Trump vowed to make the economy better on Day 1. Now, he says the US is in 'transition' - ABC News",
+    "description": null,
+    "url": "https://abcnews.go.com/Politics/trump-vowed-make-economy-day-1-now-us/story?id\\\\u003d119674028",
+    "urlToImage": null,
+    "publishedAt": "2025-03-11T21:33:45Z",
+    "content": null
+  },
+  {
+    "source": {
+      "id": "cnn",
+      "name": "CNN"
+    },
+    "author": "Ramishah Maruf",
+    "title": "As Trump poses with Teslas in front of the White House, the company’s slumping stock climbs - CNN",
+    "description": "It was almost an extraordinary scene in front of the White House. As Tesla shares have been tanking since the year began, President Donald Trump held remarks outside of the White House with the company’s CEO and Department of Government Efficiency Head Elon M…",
+    "url": "https://www.cnn.com/2025/03/11/business/tesla-stock-trump-white-house/index.html",
+    "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2204584440.jpg?c=16x9&q=w_800,c_fill",
+    "publishedAt": "2025-03-11T20:50:44Z",
+    "content": "It was an extraordinary scene at the White House South Lawn Tuesday. President Donald Trump effectively held a combination press conference and live Tesla ad outside the White House, accompanied by t… [+3016 chars]"
+  },
+  {
+    "source": {
+      "id": "the-washington-post",
+      "name": "The Washington Post"
+    },
+    "author": "Shannon Najmabadi",
+    "title": "Southwest ends its trademark ‘bags fly free’ policy for many customers - The Washington Post",
+    "description": "The bag-fee announcement marks the latest instance of Southwest abandoning one of its hallmarks.",
+    "url": "https://www.washingtonpost.com/business/2025/03/11/southwest-checked-bags/",
+    "urlToImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/3Y2OWBHSLIHGV5TULTK2EML2LY_size-normalized.jpg&w=1440",
+    "publishedAt": "2025-03-11T20:34:37Z",
+    "content": "Southwest Airlines will stop offering two free checked bags to most customers.\r\nThe curtailment of one of the airlines signature offerings Bags Fly Free is listed as a company trademark comes as it h… [+2941 chars]"
+  },
+  {
+    "source": {
+      "id": "politico",
+      "name": "Politico"
+    },
+    "author": "Marcia Brown, Adam Cancryn",
+    "title": "Kennedy gives food company CEOs an ultimatum - POLITICO",
+    "description": "The HHS secretary pressed for commitments to reduce food additives in a closed-door meeting Monday.",
+    "url": "https://www.politico.com/news/2025/03/11/rfk-food-companies-hhs-maha-00224006",
+    "urlToImage": "https://static.politico.com/af/aa/def2b6824d4580f1ba91abd60b29/unlimiteduse-03-04-2025-trump-sotu-pk-076.jpg",
+    "publishedAt": "2025-03-11T18:29:01Z",
+    "content": "He expects real and transformative change by getting the worst ingredients out of food, she added, quoting the secretary.\r\nKennedys demands show that hes prioritizing using his office as a bully pulp… [+2632 chars]"
+  },
+  {
+    "source": {
+      "id": null,
+      "name": "Investopedia"
+    },
+    "author": "Andrew Kessel",
+    "title": "Tesla Stock Surges Tuesday After Major Sell-Off - Investopedia",
+    "description": "Tesla shares climbed Tuesday after losing more than 15% of their value a day earlier.",
+    "url": "https://www.investopedia.com/tesla-stock-surges-tuesday-after-major-sell-off-11694825",
+    "urlToImage": "https://www.investopedia.com/thmb/avpYkI3F2z81Riy-zgQr0QOrX2E=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-2202847472-3dd4bad254974443a79cd2aa0155c5a2.jpg",
+    "publishedAt": "2025-03-11T18:15:43Z",
+    "content": "<ul><li>Tesla shares climbed Tuesday, after losing more than 15% of their value a day earlier.</li><li>The stock is on pace to fall for an eighth consecutive week, overlapping with CEO Elon Musk's ti… [+1410 chars]"
+  },
+  {
+    "source": {
+      "id": "bloomberg",
+      "name": "Bloomberg"
+    },
+    "author": "Esha Dey",
+    "title": "S&P 500 Set to Enter Correction as Growth Fears Trigger Selloff - Bloomberg",
+    "description": "The S&amp;P 500 Index’s three-week sellofff reached 10% before dip buyers waded in to stanch the rout, though trading remained volatile amid another bout of trade-war angst.",
+    "url": "https://www.bloomberg.com/news/articles/2025-03-11/s-p-500-set-to-enter-correction-as-growth-fears-trigger-selloff",
+    "urlToImage": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i1RDUSKYWhrs/v0/1200x800.jpg",
+    "publishedAt": "2025-03-11T17:29:21Z",
+    "content": "The S&amp;P 500 Indexs three-week sellofff reached 10% before dip buyers waded in to stanch the rout, though trading remained volatile amid another bout of trade-war angst.\r\nThe equity benchmark was … [+505 chars]"
+  },
+  {
+    "source": {
+      "id": null,
+      "name": "Decrypt"
+    },
+    "author": "Sander Lutz",
+    "title": "Sen. Lummis Reintroduces Bitcoin Act, Which Would Allow US to Buy $80 Billion in BTC - Decrypt",
+    "description": "The BITCOIN Act would codify President Trump’s Bitcoin reserve plan—but also take it a step further.",
+    "url": "https://decrypt.co/309542/lummis-bitcoin-act-us-governernment-buy-1-million-bitcoin",
+    "urlToImage": "https://cdn.decrypt.co/resize/1024/height/512/wp-content/uploads/2022/04/Cynthia-Lummis-NBC-e1648850407380-gID_7.png",
+    "publishedAt": "2025-03-11T16:34:32Z",
+    "content": "Sen. Cynthia Lummis (R-WY) introduced a bill in the U.S. Senate Tuesday that would authorize the U.S. government to buy up one million additional Bitcoin and codify President Donald Trumps pledged st… [+2689 chars]"
+  },
+  {
+    "source": {
+      "id": "fortune",
+      "name": "Fortune"
+    },
+    "author": "Greg McKenna",
+    "title": "Goldman Sachs' chief economist just downgraded the entire U.S. economy as Trump's latest tariff salvo rattles markets - Fortune",
+    "description": "The storied investment bank has forecast GDP growth to come in below Wall Street’s consensus for the first time in 2½ years.",
+    "url": "https://fortune.com/2025/03/11/goldman-sachs-chief-economist-downgrades-entire-us-economy-trump-tariffs-markets/",
+    "urlToImage": "https://fortune.com/img-assets/wp-content/uploads/2025/03/GettyImages-2189598839-e1741708499821.jpg?resize=1200,600",
+    "publishedAt": "2025-03-11T16:05:00Z",
+    "content": null
+  },
+  {
+    "source": {
+      "id": null,
+      "name": "Financial Times"
+    },
+    "author": "Peter Wells",
+    "title": "United and American warn on drop in demand for US air travel - Financial Times",
+    "description": "American, Delta and Southwest trim financial guidance on corporate and consumer softness",
+    "url": "https://www.ft.com/content/22d12186-83c3-451a-a09e-891d369fec02",
+    "urlToImage": "https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F18ff2e5a-c525-4541-896a-429b98f1137e.jpg?source=next-barrier-page",
+    "publishedAt": "2025-03-11T14:37:46Z",
+    "content": "Complete digital access to quality analysis and expert insights, complemented with our award-winning Weekend Print edition.\r\n<ul><li></li>Everything in Print<li></li>Weekday Print Edition<li></li>FT … [+202 chars]"
+  },
+  {
+    "source": {
+      "id": null,
+      "name": "Futurism"
+    },
+    "author": "Victor Tangermann",
+    "title": "Elon Musk Looks Like He's Trying Not to Cry When Asked About Tesla - Futurism",
+    "description": "During a Fox Business interview, Musk appeared to be on the verge of tears over Tesla's stock getting hammered.",
+    "url": "https://futurism.com/elon-musk-trying-not-cry-tesla",
+    "urlToImage": "https://wordpress-assets.futurism.com/2025/03/elon-musk-trying-cry-tesla.jpg",
+    "publishedAt": "2025-03-11T14:34:39Z",
+    "content": "Unelected White House advisor Elon Musk has seemingly been spending the vast majority of his time ransacking the federal government and excising what he claims to be \"waste\" and \"fraud\" with the help… [+3697 chars]"
+  }]}

@@ -137,7 +137,7 @@ class _IBMCalculatorScreenState extends State<IBMCalculatorScreen> {
                         min: 80,
                         max: 220,
                         thumbColor: Color(0xFFA11245),
-                        
+
                         activeColor: Colors.white,
                         onChanged: (  value){
                       setState(() {
