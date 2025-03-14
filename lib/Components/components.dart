@@ -66,7 +66,7 @@ Widget divider()=> Padding(
 //
 Product? product;
 
-Widget buildProduct({Product? product})=>Padding(
+Widget buildProduct({Product? product ,})=>Padding(
   padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 15),
   child: Container(
     height: 250,

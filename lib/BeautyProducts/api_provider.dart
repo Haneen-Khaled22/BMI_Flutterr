@@ -14,8 +14,7 @@ class ApiProvider{
   {
     try
     {
-      Response response = await Dio().get("$baseUrl/products",queryParameters:
-      {"select": "id,title,description,price,rating,thumbnail"});
+      Response response = await Dio().get("$baseUrl/products",);
       print(response.data.toString());
 
       productsModel = ProductsModel.fromJson(response.data);
@@ -24,6 +23,11 @@ class ApiProvider{
 
     }catch(error){
       print(error.toString());
+      if(error is DioException){
+
+        print(error.response?.data["message"]);
+        throw Exception(error.response?.data);
+      }
     }
 
   }
@@ -46,10 +50,10 @@ class ApiProvider{
       sharedPreferences.setString("token", response.data['accessToken']);
     } catch (e) {
       print(e.toString());
-      if(e is DioException){
-        print(e.response?.data["message"]);
-        throw Exception(e.response?.data["message"]);
-      };
+      // if(e is DioException){
+      //   print(e.response?.data["message"]);
+      //   throw Exception(e.response?.data["message"]);
+      // };
     }
   }
 
