@@ -1,47 +1,57 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:testandroid/BeautyProducts/products_model.dart';
+import 'package:testandroid/layout/NewaApp/webview/webview_screen.dart';
 
 import '../layout/NewaApp/cubit.dart';
 import '../layout/NewaApp/states.dart';
 
-Widget buildItemData(article,context)=>Padding(
-  padding: const EdgeInsets.all(20.0),
-  child: Row(
-
-    children: [
-      Container(
-        width: 150,
-        height: 130,
-        decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(8),
-            image: DecorationImage(
-                fit: BoxFit.cover,
-                image: NetworkImage('${article['urlToImage']}')
-            )
-        ),
-      ),
-      SizedBox(width: 20,),
-      Expanded(
-        child: Container(
+Widget buildItemData(article,context)=>InkWell(
+  onTap: (){
+    navigateTo(context, WebviewScreen(article['url']));
+  },
+  child: Padding(
+    padding: const EdgeInsets.all(20.0),
+    child: Row(
+  
+      children: [
+        Container(
+          width: 150,
           height: 130,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Expanded(
-                child: Text('${article['title']}',style: Theme.of(context).textTheme.titleLarge,
-                  maxLines: 3,
-                  overflow: TextOverflow.ellipsis,),
-              ),
-              Text('${article['publishedAt']}',style: TextStyle(
-                  color: Colors.grey,
-                  fontSize: 20
-              ),)
-            ],
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(8),
+              image: DecorationImage(
+                  fit: BoxFit.cover,
+                  image: NetworkImage('${article['urlToImage']}')
+              )
           ),
         ),
-      )
-    ],
+        SizedBox(width: 20,),
+        Expanded(
+          child: Container(
+            height: 130,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Expanded(
+                  child: Builder(
+                    builder: (context) {
+                      return Text('${article['title']}',style: Theme.of(context).textTheme.titleLarge,
+                        maxLines: 3,
+                        overflow: TextOverflow.ellipsis,);
+                    }
+                  ),
+                ),
+                Text('${article['publishedAt']}',style: TextStyle(
+                    color: Colors.grey,
+                    fontSize: 20
+                ),)
+              ],
+            ),
+          ),
+        )
+      ],
+    ),
   ),
 );
 
@@ -111,4 +121,58 @@ Widget buildProduct({Product? product})=>Padding(
   ),
 );
 
+void navigateTo(context,widget)=>Navigator.push(context, MaterialPageRoute(builder:(context)=> widget));
 
+Widget defaultTextFormFeild(
+{
+  @required TextEditingController? controller,
+  required TextInputType type,
+  required String? Function(String?)? validator, // Corrected type
+  void Function(String)? onSubmit, // Corrected type
+  void Function(String)? onChange,
+  String? labelText,
+  String? hinttext,
+  IconData? prefixicon,
+  IconData? suffixicon,
+
+}
+    )=>TextFormField(
+  validator: validator,
+  controller: controller,
+  onFieldSubmitted: onSubmit,
+  onChanged: onChange,
+  keyboardType: type,
+  decoration: InputDecoration(
+    border: OutlineInputBorder(),
+    labelText: labelText,
+    hintText: hinttext,
+    prefixIcon: Icon(prefixicon),
+    suffixIcon: Icon(suffixicon),
+
+
+  ),
+);
+
+Widget defaultmaterialButton(
+{
+   @required double width = double.infinity,
+   required void Function() onPressed,
+    required String text,
+  required Color color,
+}
+    )=>Container
+  (
+  width: width,
+  padding: EdgeInsets.all(6),
+  decoration: BoxDecoration(
+    color:color,
+    borderRadius: BorderRadius.circular(8),
+  ),
+  child: MaterialButton(
+    onPressed: onPressed,
+    child: Text(
+      text,
+      style: TextStyle(color: Colors.white, fontSize: 18),
+    ),
+  ),
+);

@@ -1,5 +1,6 @@
 
 import 'package:dio/dio.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:testandroid/BeautyProducts/products_model.dart';
 
 class ApiProvider{
@@ -13,7 +14,8 @@ class ApiProvider{
   {
     try
     {
-      Response response = await Dio().get("$baseUrl/products");
+      Response response = await Dio().get("$baseUrl/products",queryParameters:
+      {"select": "id,title,description,price,rating,thumbnail"});
       print(response.data.toString());
 
       productsModel = ProductsModel.fromJson(response.data);
@@ -25,5 +27,31 @@ class ApiProvider{
     }
 
   }
+
+
+
+
+  userLoginEmail({required String email, required String password}) async {
+    final SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
+    try {
+      FormData userData = FormData.fromMap({
+        "username": email,
+        "password": password,
+      });
+      Response response = await Dio().post(
+        "$baseUrl/auth/login",
+        data: userData,
+      );
+      print(response.data["accessToken"]);
+      sharedPreferences.setString("token", response.data['accessToken']);
+    } catch (e) {
+      print(e.toString());
+      if(e is DioException){
+        print(e.response?.data["message"]);
+        throw Exception(e.response?.data["message"]);
+      };
+    }
+  }
+
 }
 

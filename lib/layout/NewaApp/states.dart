@@ -37,3 +37,14 @@ class GetScienceErrorState extends NewsStates{
        this.error
        );
 }
+
+class GetSearchSuccessState extends NewsStates{}
+
+class GetSearchLoadingState extends NewsStates{}
+
+class GetSearchErrorState extends NewsStates{
+   String error;
+   GetSearchErrorState(
+       this.error
+       );
+}

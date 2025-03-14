@@ -1,6 +1,7 @@
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:testandroid/Counter/Cubit/states.dart';
+import 'package:testandroid/network/local/cache_helper.dart';
 
 class CounterCubit extends Cubit<CounterStates>{
 
@@ -21,9 +22,15 @@ class CounterCubit extends Cubit<CounterStates>{
   }
 
   bool isDark=false;
-  void changeThemeMode(){
+  void changeThemeMode({bool? fromShared}){
+  if(fromShared != null)
+   isDark = fromShared;
+  else
     isDark = ! isDark;
-    emit(ChangeThemeMode());
+    CacheHelper.putBoolean(key: 'isDark', value: isDark).then((value){
+      emit(ChangeThemeMode());
+    });
+
   }
 
 }
